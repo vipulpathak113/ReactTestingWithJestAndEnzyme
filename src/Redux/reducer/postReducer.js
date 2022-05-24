@@ -1,6 +1,6 @@
 import { types } from "../action/types";
 
-export default function homeReducer(state = [], action) {
+export default function postReducer(state = [], action) {
   switch (action.type) {
     case types.GET_TYPES:
       return action.payload;

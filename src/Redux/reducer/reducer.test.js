@@ -1,9 +1,9 @@
 import { types } from "../action/types";
-import homeReducer from "./homeReducer";
+import postReducer from "./postReducer";
 
 describe("Home Reducer", () => {
   it("should return default state", () => {
-    const newState = homeReducer(undefined, {});
+    const newState = postReducer(undefined, {});
     expect(newState).toEqual([]);
   });
 
@@ -13,7 +13,7 @@ describe("Home Reducer", () => {
       { title: "Test2" },
       { title: "Test3" },
     ];
-    const newState = homeReducer(undefined, {
+    const newState = postReducer(undefined, {
       type: types.GET_TYPES,
       payload: payloadData,
     });
